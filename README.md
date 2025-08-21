@@ -14,3 +14,14 @@ The focus is on the relationships between **education**, **GDP per capita**, and
 ![GDP per capita](outputs/gdp_pc_lines.png)
 ![Secondary enrollment](outputs/sec_enroll_lines.png)
 ![Gini index](outputs/gini_lines.png)
+
+## Panel Summary
+See `reports/panel_summary.md` for missingness and balanced-years info.
+
+## Figures
+![GDP per capita](outputs/gdp_pc_lines.png)
+![Secondary enrollment](outputs/sec_enroll_lines.png)
+![Gini index](outputs/gini_lines.png)
+![Correlation](outputs/corr_heatmap.png)
+![GDP vs Enrollment](outputs/scatter_gdp_vs_enroll.png)
+![GDP vs Gini](outputs/scatter_gdp_vs_gini.png)
