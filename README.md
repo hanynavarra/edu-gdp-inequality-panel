@@ -9,3 +9,8 @@ The focus is on the relationships between **education**, **GDP per capita**, and
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/edu-gdp-inequality-panel.git
+
+## Figures
+![GDP per capita](outputs/gdp_pc_lines.png)
+![Secondary enrollment](outputs/sec_enroll_lines.png)
+![Gini index](outputs/gini_lines.png)
