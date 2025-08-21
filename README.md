@@ -35,3 +35,13 @@ See `reports/diagnostics.md` for:
 - Heteroskedasticity (Breusch–Pagan)
 
 ![FE Residuals vs Fitted](outputs/fe_resid_vs_fitted.png)
+
+## Fixed-Effects Regression
+We estimated a country FE model:
+
+log(GDP per capita) ~ Secondary enrollment + Gini
+
+- Three SE corrections: Clustered, Arellano, Driscoll–Kraay  
+- See `reports/fe_model.md` for details
+
+![FE coefficients](outputs/fe_model_coefs.png)
