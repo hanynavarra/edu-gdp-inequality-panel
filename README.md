@@ -51,3 +51,11 @@ See `reports/model_robustness.md` for:
 - Coefficients across Pooled / FE / Two-way FE / RE
 - LM test (RE vs pooled), Hausman (FE vs RE)
 - F-tests for country and time fixed effects
+
+## Figures
+![GDP per capita](outputs/gdp_pc_lines.png)
+![Secondary enrollment](outputs/sec_enroll_lines.png)
+![Gini index](outputs/gini_lines.png)
+![Correlation](outputs/corr_heatmap.png)
+![GDP vs Enrollment](outputs/scatter_gdp_vs_enroll.png)
+![GDP vs Gini](outputs/scatter_gdp_vs_gini.png)
