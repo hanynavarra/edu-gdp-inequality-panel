@@ -59,3 +59,16 @@ See `reports/model_robustness.md` for:
 ![Correlation](outputs/corr_heatmap.png)
 ![GDP vs Enrollment](outputs/scatter_gdp_vs_enroll.png)
 ![GDP vs Gini](outputs/scatter_gdp_vs_gini.png)
+
+---
+
+## Discussion of Results  
+
+Our panel dataset of six ASEAN countries (2010–2024) shows:  
+
+- **GDP per capita and enrollment** move closely together, indicating that higher economic growth is associated with improved access to education.  
+- **GDP per capita and inequality (Gini index)** show weaker correlation, suggesting that growth does not automatically reduce inequality.  
+- **Fixed Effects estimation** confirms that, within countries, increases in GDP per capita are significantly associated with higher school enrollment rates, even after accounting for unobserved country-level differences.  
+- However, the link between GDP and inequality remains mixed, hinting that redistribution policies may be necessary for growth to translate into more equitable outcomes.  
+
+These results demonstrate how household and country-level panel data can be harmonized and analyzed to uncover meaningful relationships in development economics.  
