@@ -45,3 +45,9 @@ log(GDP per capita) ~ Secondary enrollment + Gini
 - See `reports/fe_model.md` for details
 
 ![FE coefficients](outputs/fe_model_coefs.png)
+
+## Robustness
+See `reports/model_robustness.md` for:
+- Coefficients across Pooled / FE / Two-way FE / RE
+- LM test (RE vs pooled), Hausman (FE vs RE)
+- F-tests for country and time fixed effects
