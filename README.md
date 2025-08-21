@@ -25,3 +25,13 @@ See `reports/panel_summary.md` for missingness and balanced-years info.
 ![Correlation](outputs/corr_heatmap.png)
 ![GDP vs Enrollment](outputs/scatter_gdp_vs_enroll.png)
 ![GDP vs Gini](outputs/scatter_gdp_vs_gini.png)
+
+## Diagnostics
+See `reports/diagnostics.md` for:
+- Unit roots (IPS)
+- Multicollinearity (VIF)
+- Cross-sectional dependence (Pesaran CD)
+- Serial correlation (panel BG)
+- Heteroskedasticity (Breusch–Pagan)
+
+![FE Residuals vs Fitted](outputs/fe_resid_vs_fitted.png)
