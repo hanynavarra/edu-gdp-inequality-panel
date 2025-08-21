@@ -1,0 +1,23 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+
+# Python specific (in case you mix later)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files (optional — comment these out if you want to keep them on GitHub)
+data/raw/
+data/processed/
