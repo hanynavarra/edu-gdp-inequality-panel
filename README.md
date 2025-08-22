@@ -23,21 +23,18 @@ Enrollment rates in secondary education have steadily improved for most ASEAN6 c
 
 ![Gini index](outputs/gini_lines.png)
 
-Income inequality is trending downward in most ASEAN countries, though at varying rates. Indonesia shows a sharp improvement post-2010, while Thailand and Philippines also display a declining Gini index. Vietnam and Malaysia remain relatively stable, with high but slightly improving scores. Singapore’s inequality remains high, likely due to its unique economic structure and wealth concentration. Overall, while positive, the pace of inequality reduction may be too slow to match rising aspirations in the region (ADB, 2024).
+Income inequality is trending downward in most ASEAN countries, though at varying rates. **Indonesia** shows a sharp improvement post-2010, while **Thailand** and **Philippines** also display a declining Gini index. **Vietnam** and **Malaysia** remain relatively stable, with high but slightly improving scores. **Singapore’s** inequality remains high, likely due to its unique economic structure and wealth concentration. Overall, while positive, the pace of inequality reduction may be too slow to match rising aspirations in the region (ADB, 2024).
 
 
 ## Panel Summary
 See `reports/panel_summary.md` for missingness and balanced-years info.
 
-
-
-## Figures
-![GDP per capita](outputs/gdp_pc_lines.png)
-![Secondary enrollment](outputs/sec_enroll_lines.png)
-![Gini index](outputs/gini_lines.png)
-![Correlation](outputs/corr_heatmap.png)
 ![GDP vs Enrollment](outputs/scatter_gdp_vs_enroll.png)
+
+The scatter plot shows a clear positive relationship between secondary enrollment rates and GDP per capita. As countries expand access to education, GDP tends to rise, supporting human capital theory (Barro, 1991). The regression line highlights a strong upward trend, especially for countries like **Singapore**, **Malaysia**, and **Vietnam**. This reinforces the idea that investment in education is associated with long-term economic growth.
+
 ![GDP vs Gini](outputs/scatter_gdp_vs_gini.png)
+This plot shows a weak and slightly positive relationship between GDP per capita and income inequality (Gini Index). The regression line slopes upward, suggesting that in the ASEAN context, income growth doesn’t necessarily reduce inequality. Countries like **Singapore** and **Malaysia** show high GDP with persistent inequality, while lower-income economies like **Vietnam** or **Philippines** appear more equitable. This may reflect the “inequality-growth trade-off” seen in some developing economies (Kuznets Curve theory).
 
 ## Diagnostics
 See `reports/diagnostics.md` for:
@@ -46,6 +43,10 @@ See `reports/diagnostics.md` for:
 - Cross-sectional dependence (Pesaran CD)
 - Serial correlation (panel BG)
 - Heteroskedasticity (Breusch–Pagan)
+
+![Correlation](outputs/corr_heatmap.png)
+
+This correlation matrix gives a quick snapshot of the linear relationships among the three key variables. Secondary enrollment is negatively correlated with Gini (-0.2), hinting that higher educational access might be associated with lower inequality. Surprisingly, the correlation between GDP per capita and Gini is slightly positive (+0.2), suggesting inequality can persist even as income rises. However, the correlation between GDP and education is weak (+0.1), possibly reflecting structural differences across ASEAN economies.
 
 ![FE Residuals vs Fitted](outputs/fe_resid_vs_fitted.png)
 
@@ -62,7 +63,7 @@ log(GDP per capita) ~ Secondary enrollment + Gini
 
 ![FE coefficients](outputs/fe_model_coefs.png)
 
-This coefficient plot visualizes the results from three Fixed Effects models. Across all specifications, secondary education enrollment shows a consistent positive and significant relationship with GDP per capita — supporting the theory that human capital development drives economic growth. On the other hand, the Gini index (inequality) generally shows a negative coefficient, suggesting that higher inequality may dampen growth, although the effect is weaker and less stable across models. The confidence intervals reinforce the robustness of the education effect while highlighting uncertainty around inequality’s role. Together, these results point to education as a more reliable driver of economic growth in the ASEAN context.
+This coefficient plot visualizes the results from three Fixed Effects models. Across all specifications, secondary education enrollment shows a consistent positive and significant relationship with GDP per capita- supporting the theory that human capital development drives economic growth. On the other hand, the Gini index (inequality) generally shows a negative coefficient, suggesting that higher inequality may dampen growth, although the effect is weaker and less stable across models. The confidence intervals reinforce the robustness of the education effect while highlighting uncertainty around inequality’s role. Together, these results point to education as a more reliable driver of economic growth in the ASEAN context.
 
 
 ## Robustness
